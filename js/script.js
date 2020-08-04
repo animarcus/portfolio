@@ -3,7 +3,7 @@ var time = new Date().toLocaleTimeString();
 var todoList = {
   todos : [ {todoText: "fart button on pi", completed: true},
             {todoText: "create awesome website", completed: false},
-            {todoText: "fuck", completed: true}],
+            {todoText: "bork", completed: true}],
   // todos : [],
   addTodo : function (todoText) {
     this.todos.push({
@@ -83,18 +83,15 @@ let view = {
       let todosUl = document.querySelector("ul");
       todosUl.innerHTML = "No todos here!";
     } else {
-      // console.log(time);
-
       let biglen = [0, ""];
       todoList.todos.forEach(function(todo) {
         todo = todo.todoText.trim();
-        // console.log("bork",todo.length);
         if (todo.length>biglen[0]) {
           biglen[0] = todo.length;
           biglen[1] = todo;
         }
       });
-      let maxlen = biglen[0] + 5;
+      let maxlen = biglen[0] + 2;
 
       let todosUl = document.querySelector("ul");
       todosUl.innerHTML = "";
@@ -126,13 +123,13 @@ let view = {
     let toggleButton = document.createElement('button');
     toggleButton.textContent = content;
     toggleButton.className = 'toggleButton';
-    // toggleButton.style = "position: absolute; left: 200px"
     return toggleButton;
   },
   createChangeInput : function () {
     let changeInput = document.createElement('input');
     changeInput.placeholder = "Modify";
     changeInput.className = 'changeTodo';
+    changeInput.style = "width:25ch";
     return changeInput;
   },
   setUpEventListeners : function () {
@@ -148,7 +145,6 @@ let view = {
     todosUl.addEventListener("keydown", function(event) {
       if (event.key === "Enter") {
         let currentInput = event.target;
-        // console.log(currentInput);
         if (currentInput.className === 'changeTodo') {
           handlers.changeTodo(parseInt(event.target.parentNode.id), currentInput.value);
         }
