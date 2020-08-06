@@ -25,12 +25,21 @@ body {
   transform: translate(-50%, -50%) 
 }
 
-.button:hover {
-  content: "Don't be shy!";
-}
+
 
 .button:active{
   height: 57vh;
   width: 57vh;
   background: rgb(35, 102, 146);
+}
+
+@media only screen and (max-width: 600px) {
+  .button:active{
+    height: 27vh;
+  width: 27vh;
+  }
+  .button{
+    height: 30vh;
+    width: 30vh;
+  }
 }

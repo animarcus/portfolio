@@ -1,12 +1,23 @@
-
+var playing = false;
 var x = document.getElementById("myAudio");
 // var button = document.getElementById("clickMe");
 console.log(x);
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  document.addEventListener('click', function(event) {
+    let buttonClicked = event.target;
+    if (buttonClicked.className === 'button') {
+      if (playing === false) {
+        playAudio();
+      } else {
+        pauseAudio();
+      }
+    }
+  });
+}
 document.addEventListener('mousedown', function(event) {
   let buttonClicked = event.target;
   if (buttonClicked.className === 'button') {
-    // console.log("boop");
-    // document.getElementById("butt").value = "Press me";
     playAudio();
   }
 });
@@ -14,19 +25,17 @@ document.addEventListener('mousedown', function(event) {
 document.addEventListener('mouseup', function(event) {
   let buttonClicked = event.target;
   if (buttonClicked.className === 'button') {
-    // console.log("booper");
-    // document.getElementById("butt").value = "Press Me";
     pauseAudio();
   }
 });
 
 
 function playAudio() {
+  x.currentTime = 0;
   x.play();
 }
 
 function pauseAudio() {
   x.pause();
-  x.currentTime = 0;
 }
 
