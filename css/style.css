@@ -1,4 +1,36 @@
-.content {
-  max-width: 600px;
-  margin: auto;
+body {
+  background: #f1c40f;
+}
+
+
+.button {
+  content: "Press Me";
+  border: 2px dotted green;
+  height: 60vh;
+  width: 60vh;
+  /* background-color: rgba(255, 0, 0, 1); */
+  background: rgb(52, 152, 219);
+  outline:none;
+
+  text-align: center;
+  display: inline-block;
+  font-size: 10vh;
+  margin: 4px 2px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.button:hover {
+  content: "Don't be shy!";
+}
+
+.button:active{
+  height: 57vh;
+  width: 57vh;
+  background: rgb(35, 102, 146);
 }
