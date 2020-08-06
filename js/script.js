@@ -8,8 +8,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     let buttonClicked = event.target;
     if (buttonClicked.className === 'button') {
       if (playing === false) {
+        playing = true;
         playAudio();
       } else {
+        playing = false;
         pauseAudio();
       }
     }
