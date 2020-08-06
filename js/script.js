@@ -4,6 +4,7 @@ var x = document.getElementById("myAudio");
 console.log(x);
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  document.getElementById("butt").value = "";
   document.addEventListener('click', function(event) {
     let buttonClicked = event.target;
     if (buttonClicked.className === 'button') {
