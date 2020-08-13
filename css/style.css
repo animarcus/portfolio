@@ -1,20 +1,25 @@
+* {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 body {
   background: #f1c40f;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 
-.button {
+.pressme {
   content: "Press Me";
   border: 2px dotted green;
-  height: 60vh;
-  width: 60vh;
+  height: 59vh;
+  width: 59vh;
   background: rgb(52, 152, 219);
   outline:none;
 
@@ -28,26 +33,64 @@ body {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%)
 }
 
-
-
-.button:active{
-  height: 57vh;
-  width: 57vh;
+.pressme:active{
+  height: 56vh;
+  width: 56vh;
   background: rgb(35, 102, 146);
 }
 
+.buttonsdiv {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.redirect {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  border-radius: 2px;
+  outline: none;
+  opacity: 0.8;
+}
+
+.toptext {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.credits {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.githublink {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+
+
 @media only screen and (max-width: 600px) {
-  .button:active{
+  .pressme:active{
     height: 27vh;
     width: 27vh;
   }
-  .button{
+  .pressme{
     height: 30vh;
     width: 30vh;
     background: #3498db;
-    font-size: 1vh;
+    font-size: 4vh;
   }
 }

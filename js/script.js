@@ -6,13 +6,13 @@ console.log(x);
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   document.addEventListener("touchstart", function(e) {
-    if (event.target.className === "button") {
+    if (event.target.className === "pressme") {
       playAudio();
       }
     }
   );
   document.addEventListener("touchend", function(e) {
-    if (event.target.className === "button") {
+    if (event.target.className === "pressme") {
       pauseAudio();
       }
     }
@@ -21,7 +21,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 document.addEventListener('mousedown', function(event) {
   let buttonClicked = event.target;
-  if (buttonClicked.className === 'button') {
+  if (buttonClicked.className === "pressme") {
     playAudio();
   }
 });

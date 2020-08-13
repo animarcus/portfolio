@@ -8,15 +8,23 @@
   <title>Philip is hungry</title>
 </head>
 <body>
-  <button onclick="window.location.href='https://animarcus.github.io/JavascriptTodoList'">Todo List</button>
-  <button onclick="window.location.href='https://animarcus.github.io/breakout-game'">Breakout game concept</button>
-  <audio id="myAudio">
-    <!-- <source src="other/Philip_Hungry.ogg" type="audio/ogg"> -->
+  <b class="toptext">My other webapps</b>
+  <div class="buttonsdiv">
+    <button class="redirect" onclick="window.open('https://animarcus.github.io/JavascriptTodoList')">Todo List</button>
+    <button class="redirect" onclick="window.open('https://animarcus.github.io/breakout-game')">Breakout game concept</button>
+  </div>
+    <audio id="myAudio">
     <source src="other/Philip_Hungry.mp3" type="audio/mpeg">
   </audio>
   <div class="container">
-    <input type="button" class="button" value="Press Me"/>
+    <input type="button" class="pressme" value="Press Me"/>
   </div>
+  <div class="credits" onclick="window.open('https://github.com/animarcus')">
+    <b class="githublink">Full website by Marcus Hamelink</b>
+    <small class="githublink">Click here for my GitHub</small>
+  </div>
+
+
   <script src="js/script.js"></script>
 </body>
 </html>
