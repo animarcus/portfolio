@@ -15,40 +15,16 @@ body {
 }
 
 
-.pressme {
-  content: "Press Me";
-  border: 2px dotted green;
-  height: 59vh;
-  width: 59vh;
-  background: rgb(52, 152, 219);
-  outline:none;
-
-  text-align: center;
-  display: inline-block;
-  font-size: 10vh;
-  margin: 4px 2px;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-
-.pressme:active{
-  height: 56vh;
-  width: 56vh;
-  background: rgb(35, 102, 146);
-}
-
 .buttonsdiv {
-  padding-top: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 10%;
-  padding-right: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
 }
 .redirect {
   padding-top: 15px;
@@ -63,6 +39,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .credits {
@@ -78,19 +55,4 @@ body {
 .githublink {
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
-}
-
-
-
-@media only screen and (max-width: 600px) {
-  .pressme:active{
-    height: 27vh;
-    width: 27vh;
-  }
-  .pressme{
-    height: 30vh;
-    width: 30vh;
-    background: #3498db;
-    font-size: 4vh;
-  }
 }
