@@ -69,18 +69,3 @@ body {
   text-align: left;
   z-index: 2;
 }
-
-
-
-@media only screen and (max-width: 600px) {
-  .pressme:active{
-    height: 27vh;
-    width: 27vh;
-  }
-  .pressme{
-    height: 30vh;
-    width: 30vh;
-    background: #3498db;
-    font-size: 4vh;
-  }
-}
