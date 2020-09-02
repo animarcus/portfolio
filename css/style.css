@@ -8,64 +8,61 @@
   user-select: none;
 }
 body {
-  background: #4ff10f;
+  background: #f1c40f;
   height: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
-}
-
-
-.pressme {
-  content: "Press Me";
-  border: 2px dotted green;
-  height: 59vh;
-  width: 59vh;
-  background: rgb(52, 152, 219);
-  outline:none;
-
-  text-align: center;
-  display: inline-block;
-  font-size: 10vh;
-  margin: 4px 2px;
   border-radius: 50%;
+}
 
+.mainstuff {
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
-.pressme:active{
-  height: 56vh;
-  width: 56vh;
-  background: rgb(35, 102, 146);
-}
 
 .toptext {
-  width: 50vw;
-  word-break:normal;
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 80%;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  display: flex;
+  justify-content: center;
 }
 
-#goBackMain {
+
+.buttonsdiv {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.redirect {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 15px;
   border-radius: 2px;
   outline: none;
   opacity: 0.8;
+}
 
+.credits {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+
+.credits {
   position: fixed;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  z-index: 2;
+  text-align: right;
+}
+.githublink {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
 }
