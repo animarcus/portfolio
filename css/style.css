@@ -73,3 +73,6 @@ img {
   cursor: pointer;
 }
 
+img {
+  mix-blend-mode: multiply;
+}
