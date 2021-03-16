@@ -1,3 +1,2 @@
 # animarcus.github.io
-Marcus' website
-This is my personal website where I try to add my latest projects.
+This is my personal website where I try to show my latest projects
