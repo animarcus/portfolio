@@ -38,8 +38,7 @@ body {
 }
 
 .redirect {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 20px 0px 20px 0px;
   font-size: 15px;
   border-radius: 2px;
   outline: none;
