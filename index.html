@@ -1,49 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="apple-touch-icon"sizes="180x180"href="/icons/apple-touch-icon.png">
-  <link rel="icon"type="image/png"sizes="32x32"href="/icons/favicon-32x32.png">
-  <link rel="icon"type="image/png"sizes="16x16"href="/icons/favicon-16x16.png">
-  <link rel="manifest"href="/icons/site.webmanifest">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/button.css">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>Marcus' Website</title>
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://kit.fontawesome.com/f74bd8f0b2.js" crossorigin="anonymous"></script>
+  <title>Marcus Hamelink</title>
 </head>
+
 <body>
-  <div class="mainstuff">
-    <!-- <canvas id="canvas"></canvas> -->
-    <b class="toptext">My Projects</b>
-    <div class="buttonsDiv">
-      <b class="projectDate">Most recent project:</b>
-      <button class="normalButton" onclick="window.location.href='https://mapr.me'">MAPR</button>
-      <br>
-      <b class="projectDate">Learning:</b>
-      <button class="normalButton" onclick="window.location.href='https://github.com/animarcus/crypto-key-gen'">Cryptographic Key generator</button>
-      <button class="normalButton" onclick="window.location.href='https://github.com/animarcus/docker-go-backend'">Docker fullstack webserver concept</button>
-      <br>
-      <b class="projectDate">Web Concepts:</b>
-      <button class="normalButton" onclick="window.location.href='https://animarcus.github.io/maze-generator/'">Maze Generator</button>
-      <button class="normalButton" onclick="window.location.href='https://animarcus.github.io/sorting-algorithms/'">Sorting Algorithms Visualizer</button>
-      <button class="normalButton" onclick="window.location.href='https://animarcus.github.io/graphing-app/'">Graphing App</button>
-      <button class="normalButton" onclick="window.location.href='https://animarcus.github.io/todo-list/'">Todo List</button>
-      <br>
-      <b class="projectDate">Games:</b>
-      <button class="normalButton" onclick="window.location.href='https://animarcus.github.io/breakout-game/'">Breakout game concept</button>
-      <button class="normalButton" onclick="window.location.href='https://animarcus.github.io/mustache-guy-concept/'">Platformer concept</button>
-      <button class="normalButton" onclick="window.location.href='https://animarcus.github.io/dinosaur-game/'">Dinosaur game clone</button>
+  <nav id="navbar">
+    <ul>
+      <li>
+        <h1>
+          <a href="index.html">
+            <span class="fa-solid fa-computer" aria-hidden="true"></span>
+            <span>Marcus Hamelink</span></a>
+        </h1>
+      </li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/animarcus" target="_blank">
+          <span class="fa-brands fa-github" aria-hidden="true"></span>
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li><a href="https://twitter.com/marcushamelink" target="_blank">
+          <span class="fa-brands fa-twitter" aria-hidden="true"></span>
+          <span class="sr-only">Twitter</span>
+        </a>
+      </li>
+      <li><a href="index.html" class="button">Resume</a></li>
+    </ul>
+  </nav>
+  <section id="intro">
+    <!-- <div style="background-color: var(--primary);">c1</div>
+    <div style="background-color: var(--secondary);">c2</div>
+    <div style="background-color: var(--positive);">c3</div>
+    <div style="background-color: var(--accent);">c4</div>
+    <div style="background-color: var(--darkaccent);">c5</div>
+    <div style="background-color: var(--white);">c6</div>
+    <div style="background-color: var(--black);">c7</div> -->
+    <p class="name">Hi, my name is <span>Marcus Hamelink.</span></p>
 
-      <br>
-      <div class="link" onclick="window.open('https://github.com/animarcus/MAPR')">Find my github here: <br> https://github.com/animarcus/</div>
-    </div>
-  </div>
-  
-  <!-- <img src="/other/MHamelinkLogo.png" alt="Logo"> -->
-  <!-- <script src="js/bla.js"></script> -->
-  <script src="js/script.js"></script>
+    <h2>I develop websites</h2>
+
+    <p>I'm a first year Bachelor's student in Math at EPFL.</p>
+
+    <p>On the side, I work on frontend web development, currently learning React.</p>
+
+    <p>However, I also enjoy 3D Printing and finding ways to improve my daily life
+      through projects that I post on <a href="htps://marcus.hamelink.com" taget="_blank">my website</a>.</p>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact me</h2>
+
+    <p>I'm always interested in hearing about new directions I can take with my projects, whether it's new technologies
+      or
+      better techniques.
+    </p>
+    <p>
+      <a href="mailto:hamelink.m@gmail.com">Email me</a>
+    </p>
+  </section>
 </body>
-</html>
 
+</html>
