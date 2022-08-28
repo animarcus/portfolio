@@ -1,0 +1,27 @@
+/* intro styles */
+
+#intro {
+  padding: 4em 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+#intro p {
+  font-size: 1.3rem;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--positive);
+  display: block;
+}
+
+#intro h2 {
+  font-size: 4rem;
+}

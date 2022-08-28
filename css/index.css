@@ -1,10 +1,10 @@
 :root {
   --primary: #092746;
   --secondary: #0f4478;
-  --ternary: #4b0d49;
-  --accent: #bb57aa;
-  --darkaccent: #923b83;
-  --positive: chartreuse;
+  --ternary: #0e9da2;
+  --accent: #f9b23a;
+  --darkaccent: #b27205;
+  --positive: rgb(21, 255, 0);
   --black: #171321;
   --white: #f7f8fa;
   --font-size: 1.3rem;
@@ -46,95 +46,15 @@ a:hover {
   text-decoration: none;
 }
 
-/* intro styles */
-
-#intro {
-  padding-bottom: 10rem;
-}
-
-#intro p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-#intro .name {
-  font-family: var(--mono);
-}
-
-.name span {
-  font-family: var(--sans);
-  font-size: 4rem;
-  color: var(--positive);
-  display: block;
-}
-
-#intro h2 {
-  font-size: 4rem;
-}
-
-#contact {
-  background-color: var(--ternary);
-  width: 400px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-}
-
-#contact p:last-child {
-  margin-top: 3rem;
-}
-
-nav {
-  font-family: var(--mono);
-  font-size: 80%;
-  background-color: var(--primary);
-}
-
-nav h1 a {
-  font-family: var(--sans);
-}
-nav h1 [class*="fa-"] {
-  font-size: 100%;
-  color: var(--positive);
-}
-
-nav ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li:first-child {
-  flex-basis: 100%;
-  text-align: center;
-}
-
-nav [class*="fa-"] {
-  font-size: 150%;
-  color: var(--positive);
-}
-
-nav a {
-  color: var(--white);
-  text-decoration: none;
-  display: block;
-}
-
-nav a:hover,
-nav [class*="fa-"]:hover {
-  color: var(--accent);
-}
-
 /* resume button */
 .button {
+  color: var(--white);
   background-color: var(--accent);
   padding: 0.4rem;
   border-radius: 3px;
+  font-family: var(--mono);
+  text-decoration: none;
+  font-weight: 800;
 }
 
 .button:hover {
@@ -142,14 +62,29 @@ nav [class*="fa-"]:hover {
   background-color: var(--darkaccent);
 }
 
-@media (min-width: 850px) {
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  nav li:first-child {
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
-  }
+
+/* Background color divs */
+.section-contact {
+  background-color: var(--ternary);
+  width: 100%;
+}
+
+.section-projects {
+  background-color: var(--secondary);
+  width: 100%;
+}
+
+.section-about {
+  background-color: var(--secondary);
+  width: 100%;
+}
+
+.gradient {
+  background: linear-gradient(90deg, var(--positive) 0%, var(--ternary) 100%);
+  height: 2px;
+}
+
+.gradient-reverse {
+  background: linear-gradient(90deg, var(--ternary) 0%, var(--positive) 100%);
+  height: 2px;
 }

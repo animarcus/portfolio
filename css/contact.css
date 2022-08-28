@@ -1,0 +1,12 @@
+/* Background is in index.css */
+#contact {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
+}

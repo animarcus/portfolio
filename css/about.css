@@ -1,0 +1,10 @@
+#about {
+  margin: 5rem auto;
+  background-color: rgb(46, 115, 175);
+}
+
+#about h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}

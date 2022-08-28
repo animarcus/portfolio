@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  margin: 5rem 0rem 0rem 0rem;
+  background-color: var(--primary);
+  padding: 3rem 0;
+  line-height: 3em;
+}
+
+footer ul {
+  list-style-type: none; /* remove bullets */
+  margin: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+footer p {
+  margin: 0 auto;
+}
